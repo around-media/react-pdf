@@ -139,6 +139,7 @@ class Image extends Base {
     // Clip path to keep image inside border radius
     this.clip();
 
+    console.log(this.image);
     if (this.image.data) {
       const { width, height, xOffset, yOffset } = resolveObjectFit(
         this.style.objectFit,
